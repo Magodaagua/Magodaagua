@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<style>
+  Body{
+	background-image:url(jooj.jpg);
+	background-attachment:fixed;
+	background-size:100%;
+	background-repeat:no-repeat;
+	background-color:#000;
+}
+	</style>
+  <!-- Título e ícone da página. -->
+  <link rel="icon" type="png" href="_media\icon.png">
+  <title>Login</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Links para o bootstrap e o css da página -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="_css/cadastro.css">  
+
+</head>
+
+<body>
+
+  <!-- INÍCIO DO CONTAINER. Usado para conter todos os elementos da página -->
+  <div class="container">
+    
+    <!-- INÍCIO DA "MAIN ROW". Row que engloba os dois cols da página -->
+    <div id="main-row" class="row justify-content-around">
+      
+      <!-- Col do logo -->
+      <div class="col-1 col-md-1 col-lg-5 align-self-center">
+
+        <!-- Logo do site, a esquerda do cadastro -->
+        <img class="img-fluid" src="_media/logo2.png">
+          
+      </div>
+
+      <!-- INÍCIO DO "FORM-COL". Col que engloba o form do cadastro -->
+      <div id="form-col" class="col-10 col-md-12 col-lg-6 align-self-center">
+
+        <!-- INÍCIO DO CENTER -->
+        <center>
+
+          <!-- Título do cadastro -->
+          <p style = "font-family:impact;" class="h1 my-1"><font color=#000>CADASTRAR</font></p> 
+
+          <!-- INÍCIO DO "CADASTRO-FORM". Form que recebe as informações do cadastro -->
+          <form id="cadastro-form" class="form-group" action="cadastro.php" method="post">
+
+            <!-- Row que engloba os inputs do email, nome e apelido -->
+            <div class="row justify-content-around my-3">
+          		
+              <input class="form-control col-11" type="email" name="Email" required="true" placeholder="Email"/>
+
+          	</div>
+
+          	<div class="row justify-content-around my-3">
+				      <input class="form-control col-5" type="text" name="Nome" required="true" placeholder="Nome Completo" />
+				      <input class="form-control col-5" type="text" name="Apelido" required="true" placeholder="Apelido"/>
+          		
+            </div>
+
+            <!-- Row que engloba os inputs da senha e confirmação de senha -->
+            <div class="row justify-content-around my-3">
+
+				      <input class="form-control col-5" type="password" name="Senha" required="true" placeholder="Senha"/>				
+				      <input class="form-control col-5" type="password" name="SenhaCon" required="true" placeholder="Confirme a senha"/>
+          		
+            </div>
+
+            <button class="btn btn-light" type="submit"">Cadastrar</button> 
+
+          <!-- FIM DO "CADASTRO-FORM" -->
+          </form>
+
+          <!-- Link para quando o usuário já tem uma conta -->
+          <p class="h6 my-4"><a href="login.html"><font color="darkred">Já tem uma conta?</font></a></p>
+
+        <!-- FIM DO CENTER -->
+        </center>
+
+      <!-- FIM DO "FORM-COL" -->
+      </div>
+
+    <!-- FIM DA "MAIN ROW" -->
+    </div>
+
+  <!-- FIM DO CONTAINER -->
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
