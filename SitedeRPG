@@ -1,0 +1,14 @@
+Este site tem a finalidade de ser um chat para encontros aletórios ou em grupos entre jogadores de rpg.
+Após a criação de um chat funcional partiremos para a parte das vendas de produtos.
+Lista por ordem do que o site precisa fazer:
+->Menu principal falando sobre o site, atualizações e a equipe que o criou, nós.
+->cadastro e login para que o usuario possa se cadastrar e depois logar.
+->menu do usuario, assim que o usuario se cadastrar ele caira no menu.
+->no menu terá informações sobre a conta num total, ou seja, vai falar quantas partidas foram jogadas, que itens o usuario tem, se o usuario paga assinatura, quanto tempo falta para acabar.
+->criar ficha, nessa aba o usuario vai poder escolher entre as fichas famosas de sistemas conhecidos e também poderá criar a sua própria ficha, após criar a ficha ela ficara salva nessa tela até que o usuario a exclua.
+->chat, parte principal, aqui aparece todos os chats publicos e privados. O Usuario podera entra nos chats publicos e/ou privados, também, o usuario poderá criar um chat publico ou privado.
+(ATENÇÃO: a pessoa que criar o chat é o mestre da sala, não tendo meios para trocar de mestre)
+->loja, na loja será vendido os produtos que apareceram no menu do usuario.
+->contato, nessa aba o usuario podera mandar um email relatando os problemas do site.
+->Vip, o usuario entrara nessa aba para escolher que assinatura ele ira pagar para ter mais "gilidades".
+->sair, sai da conta.
