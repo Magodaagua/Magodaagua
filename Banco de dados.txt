@@ -1,0 +1,146 @@
+mysql -u root -p
+senha (não se esqueça de alterar a senha nos comandos php de login e cadastro)
+
+create database bentotec;
+
+use bentotec;
+
+create table usuarios(
+	id_usuario int NOT NULL AUTO_INCREMENT,
+     	nome varchar(50),
+     	apelido varchar(30),
+     	email varchar(30),
+     	senha varchar(30),
+     	consenha varchar(30),
+	PRIMARY KEY (id_usuario));
+
+CREATE TABLE ficha (
+  	id_ficha int NOT NULL AUTO_INCREMENT,
+	id_usuario INT,
+  	nome VARCHAR(50),
+    	nome_pj VARCHAR(50),
+	nivel INT,
+	exp VARCHAR (30),
+    	idade VARCHAR(50),
+    	altura VARCHAR(50),
+    	peso VARCHAR(50),
+	olho VARCHAR(50),
+	cabelo VARCHAR(50),
+	pele VARCHAR(50),
+	antecedente VARCHAR(50),
+	tendencia VARCHAR(50),
+	raca VARCHAR(50),
+	classe VARCHAR(50),
+
+    	forca INT,
+    	destreza INT,
+    	constituicao INT,
+    	inteligencia INT,
+    	carisma INT,
+    	sabedoria INT,
+
+	pontos_vida INT,
+	pontos_vida_atual INT,
+	pontos_vida_temp INT,
+	dado_vida VARCHAR(50),
+
+	ca INT,
+
+	iniciativa INT,
+
+	deslocamento VARCHAR(50),
+
+	inspiracao VARCHAR(50),
+
+	proficiencia INT,
+		
+	tracos VARCHAR(500),
+	ideais VARCHAR(510),
+	ligacoes VARCHAR(510),
+	defeitos VARCHAR(510),
+		
+	idiomas VARCHAR(510),
+	caracteristicas VARCHAR(510),
+	aparencia VARCHAR(510),
+	historia_pg VARCHAR(510),
+	aliados VARCHAR(510),
+
+	tesouro VARCHAR(1000),
+	cobre INT,
+	prata INT,
+	electro INT,
+	ouro INT,
+	platina INT,
+	equipamento VARCHAR(1000),
+
+	resist_for INT,
+	resist_dest INT,
+	resist_const INT,
+	resist_int INT, 
+	resist_sab INT,
+	resist_car INT,
+
+	acrobacia VARCHAR(50),
+	arcanismo VARCHAR(50),
+	atletismo VARCHAR(50),
+	atuacao VARCHAR(50),
+	blefar VARCHAR(50),
+	furtividade VARCHAR(50),
+	historia VARCHAR(50),
+	intimidacao VARCHAR(50),
+	intuicao VARCHAR(50),
+	investigacao VARCHAR(50),
+	lidar_com_animais VARCHAR(50),
+	medicina VARCHAR(50),
+	natureza VARCHAR(50),
+	percepcao VARCHAR(50),
+	persuacao VARCHAR(50),
+	prestidigitacao VARCHAR(50),
+	religiao VARCHAR(50),
+	sobrevivencia VARCHAR(50),
+
+    	PRIMARY KEY (id_ficha)
+);
+
+CREATE TABLE logs (
+	id int(11) NOT NULL AUTO_INCREMENT, 
+	username varchar(255) NOT NULL, 
+	msg text NOT NULL, 
+	mesa varchar(50), 
+
+	PRIMARY KEY(id)
+);
+
+CREATE TABLE users (
+	id int(11) NOT NULL AUTO_INCREMENT, 
+	username varchar(255) NOT NULL, 
+	password varchar(255) NOT NULL,
+
+	PRIMARY KEY(id)
+);
+
+CREATE TABLE mesas (
+	id int(11) NOT NULL AUTO_INCREMENT, 
+	nomemesa varchar(50) NOT NULL, 
+	qtdmax int(2), 
+	qtdtotal int(2), 
+	dono varchar(50) NOT NULL, 
+	senha varchar(50), 
+
+	PRIMARY KEY(id)
+);
+
+CREATE TABLE mesasusers (
+	id int (11) NOT NULL AUTO_INCREMENT, 
+	username varchar(255), 
+	nomemesa varchar(50),
+	PRIMARY KEY(id)
+);
+
+CREATE TABLE convites (
+	id int (11) NOT NULL AUTO_INCREMENT, 
+	donomesa varchar(255) NOT NULL, 
+	convidado varchar(255), 
+	nomemesa varchar(50), 
+	PRIMARY KEY(id)
+);
