@@ -1,0 +1,68 @@
+﻿body{
+  background-color:#696969;
+}
+
+.navbar{
+  background-color: #000000;
+}
+
+.display-4{
+  font-size: 3em;
+}
+
+.h1{
+  font-family: "Rockwell";
+}
+.h2{
+  font-family: "Rockwell";
+}
+.h3{
+  font-family: "Rockwell";
+}
+.h4{
+  font-family: "Rockwell";
+}
+.h5{
+  font-family: "Rockwell";
+}
+
+@media (max-width: 575.98px) {
+  .display-4 {
+    font-size: 2.5rem;
+  }
+}
+
+a{
+  color: #000000;
+}
+
+a:hover{
+  color: #000000;
+}
+
+/*CSS PARA OS DADOS*/
+
+.image{
+  position: absolute;
+  -webkit-animation:spin 1.1s  linear 2;
+  -moz-animation:spin 1.1s linear 2;
+  animation:spin 1.1s linear 2; /*demora 1.5 segundos para dar uma volta completa e roda infinita vezes*/
+}
+.image2{
+  position: absolute;
+  -webkit-animation:spin_parar 1.5s linear; /*a diferença entre -webkit-animation, -moz-animation e animation é que varia entre os navegadores*/
+  -moz-animation:spin_parar 1.5s linear;
+  animation:spin_parar 1.5s linear;
+}
+
+.img{
+  cursor: pointer;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } } 
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+@keyframes spin_parar { 100% { -webkit-transform: rotate(200deg); transform:rotate(360deg); } }
+@-moz-keyframes spin_parar { 100% { -webkit-transform: rotate(200deg); transform:rotate(360deg); } }
+@-webkit-keyframes spin_parar { 100% { -webkit-transform: rotate(200deg); transform:rotate(360deg); } }
+/*roda 360°*/

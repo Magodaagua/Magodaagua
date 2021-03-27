@@ -1,0 +1,4 @@
+Perfil CHECK
+Index mestre CHECK
+Index Jogador CHECK
+Participar mesa CHECK

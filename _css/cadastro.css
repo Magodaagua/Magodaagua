@@ -1,0 +1,21 @@
+body{
+  background-color: #000000;
+}
+
+#main-row{
+  height: 100vh;
+}
+
+.h1{
+  font-family: "Rockwell";
+  font-size: 8vh;
+  color: #000; 
+}
+
+a{
+  color: white;
+}
+
+a:hover{
+  color: #000;
+}

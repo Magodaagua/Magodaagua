@@ -1,0 +1,473 @@
+﻿body{
+  background-color: #000000;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.logo-login{
+  display: block;
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+.logo-cadastro{
+  display: block;
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+.div-login{
+  display: block;
+  align-self: center;
+  width: 30vh;
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4vh;
+  background: #000000;
+  padding: 5vh;
+  text-align: center;
+}
+.h1-login{
+  font-family: "Rockwell";
+  color: #DEDEDE;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: -1vh;
+  border: white;
+  border-width: 2px;
+}
+.input-login{
+  width: 30vh;
+  border: .5vh;
+  height: 5vh;
+  border-radius: 3vh;
+  text-align: center;
+  color: #000;
+  font-family: Candara;
+  background-color: #DEDEDE;
+  font-size: 1.2em;
+}
+.input-login[type=submit]{
+  width: 15vh;
+  border: .5vh;
+  height: 5vh;
+  border-radius: 3vh;
+  background-color: #DEDEDE;
+  color: #000;
+  font-size: 1.2em;
+  font-family: Candara;
+  cursor: pointer;
+}
+.input-login[type=submit]:hover{
+  background-color: #677C87;
+  color: #fff;
+}
+.div-cadastro{
+  display: block;
+  width: 70vh;
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4vh;
+  background: #39474F;
+  padding: 5vh;
+  text-align: center;
+}
+.div-login p{
+  color: #fff;
+}
+.div-cadastro p{
+  color: #fff;
+}
+#link-cadastro{
+  text-decoration: none;
+  color: #fff
+}
+#link-cadastro:hover{
+  color: #aaa;
+}
+.cadastro-esquerda{
+  float: left;
+}
+.cadastro-direita{
+  float: right;
+}
+.cadastro-rodape{
+  clear: both;
+}
+/*EDIÇÃO DO CRIAR_FICHA.PHP*/
+.box-criacao{
+  position: absolute;
+  top: 10vh;
+  left: 45vw;
+  width: 42vw;
+  height: 85vh;
+  margin-top: -5vh;
+  margin-left: -17vw;
+  background-color: #000000;
+  color: #fff;
+  overflow: auto;
+  border-radius: 3vh;
+  padding: 1em;
+  font-family: Candara;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: lightgrey;
+}
+.ficha-esquerda{
+  float: left;
+  width: 20vw;
+}
+.ficha-direita{
+  float: right;
+  width: 20vw;
+}
+.box-criacao form{
+  font-family: Candara;
+}
+.box-criacao input{
+  text-align:center;
+  font-family: Candara;
+  border-style: none;
+  border-radius: 2vw;
+  width: 12vw;
+  height: 4.2vh;
+}
+.box-criacao input[type=submit]{
+  background-color: white;
+  color: #000;
+}
+.box-criacao button[type=button]{
+  background-color: #68000a;
+  color: #fff;
+  text-align:center;
+  font-family: Candara;
+  border-style: none;
+  border-radius: 2vw;
+  width: 12vw;
+  height: 4.2vh;
+}
+.box-criacao select{
+  font-family: Candara;
+  border-style: none;
+  border-radius: 2vw;
+  width: 12vw;
+  height: 4.2vh;
+  text-align: center;
+}
+.titulo{
+  clear: both;
+  color: #fff;
+  font-family: Cooper, Black;
+  font-size: 1.1em;
+}
+.box-criacao label{
+  font-family: Candara;
+}
+/*EDIÇÃO DO VISUALIZAR.PHP*/
+.div-ficha{
+  position: absolute;
+  top: 10vh;
+  left: 40vw;
+  width: 50vw;
+  height: 85vh;
+  margin-top: -5vh;
+  margin-left: -16vw;
+  color: #fff;
+  overflow: auto;
+  border-radius: 3vh;
+  padding: 1em;
+  font-family: Candara;
+  background-color: #000;
+  background-size: 30em;
+  font-weight: bold;
+}
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: lightGray;
+}
+.div-ficha input{
+  width: 8vw;
+  border: none;
+  border-bottom: 0.1em solid #fff;
+  background-color: #000;
+  font-family: Candara;
+}
+#input-num{
+  width: 3vw;
+  background-color: #555;
+}
+.div-ficha p{
+  text-align: left;
+}
+.div-ficha h1{
+  margin-top: 0em;
+}
+/*FICHA DO RPG*/
+
+/*Títulos*/
+#titulo-dados-gerais{
+  position: absolute;
+  top: 6vh;
+  left: 3vw;
+  color: #fff;
+}
+#titulo-pv{
+  position: absolute;
+  top: 32vh;
+  left: 3vw;
+  color: #fff;
+}
+#titulo-ca{
+  position: absolute;
+  top: 46vh;
+  left: 3vw;
+  color: #fff;
+}
+#titulo-iniciativa{
+  position: absolute;
+  top: 46vh;
+  left: 19vw;
+  color: #fff;
+}
+#titulo-proficiencia{
+  position: absolute;
+  top: 46vh;
+  left: 19vw;
+  color: #fff;
+}
+#titulo-inspiracao{
+  position: absolute;
+  top: 46vh;
+  left: 19vw;
+  color: #fff;
+}
+
+/*Dados Gerais do personagem*/
+#classe-nivel{
+  position: absolute;
+  top: 12vh;
+  left: 3vw;
+  color: #fff;
+}
+#exp{
+  position: absolute;
+  top: 12vh;
+  left: 12vw;
+}
+#idade{
+  position: absolute;
+  top: 12vh;
+  left: 21vw;
+}
+#altura{
+  position: absolute;
+  top: 12vh;
+  left: 30vw;
+}
+#peso{
+  position: absolute;
+  top: 18vh;
+  left: 3vw;
+}
+#olho{
+  position: absolute;
+  top: 18vh;
+  left: 12vw;
+}
+#cabelo{
+  position: absolute;
+  top: 18vh;
+  left: 21vw;
+}
+#pele{
+  position: absolute;
+  top: 18vh;
+  left: 30vw;
+}
+#raca{
+  position: absolute;
+  top: 24vh;
+  left: 3vw;
+}
+#antecedente{
+  position: absolute;
+  top: 24vh;
+  left: 12vw;
+}
+#tendencia{
+  position: absolute;
+  top: 24vh;
+  left: 21vw;
+}
+
+/*Pontos de vida*/
+#vida-total{
+  position: absolute;
+  top: 38vh;
+  left: 3vw;
+}
+#vida-atual{
+  position: absolute;
+  top: 38vh;
+  left: 12vw;
+}
+#vida-temp{
+  position: absolute;
+  top: 38vh;
+  left: 21vw;
+}
+#dado-vida{
+  position: absolute;
+  top: 38vh;
+  left: 30vw;
+}
+
+/*CA e relacionados*/
+#ca{
+  position: absolute;
+  top: 52vh;
+  left: 3vw;
+}
+#iniciativa{
+  position: absolute;
+  top: 52vh;
+  left: 19vw;
+}
+
+/*Proficiencia e Inspiração*/
+#proficiencia{
+  position: absolute;
+  top: 66vh;
+  left: 3vw;
+}
+#inspiracao{
+  position: absolute;
+  top: 66vh;
+  left: 19vw;
+}
+
+/*Atributos*/
+#forca{
+  position: absolute;
+  top: 70vh;
+  left: 3vw;
+}
+#destreza{
+  position: absolute;
+  top: 78vh;
+  left: 3vw;
+}
+#constituicao{
+  position: absolute;
+  top: 86vh;
+  left: 3vw;
+}
+#inteligencia{
+  position: absolute;
+  top: 94vh;
+  left: 3vw;
+}
+#sabedoria{
+  position: absolute;
+  top: 102vh;
+  left: 3vw;
+}
+#carisma{
+  position: absolute;
+  top: 110vh;
+  left: 3vw;
+}
+#mod_forca{
+  position: absolute;
+  top: 70vh;
+  left: 10vw;
+}
+#mod_destreza{
+  position: absolute;
+  top: 78vh;
+  left: 10vw;
+}
+#mod_constituicao{
+  position: absolute;
+  top: 86vh;
+  left: 10vw;
+}
+#mod_inteligencia{
+  position: absolute;
+  top: 94vh;
+  left: 10vw;
+}
+#mod_sabedoria{
+  position: absolute;
+  top: 102vh;
+  left: 10vw;
+}
+#mod_carisma{
+  position: absolute;
+  top: 110vh;
+  left: 10vw;
+}
+.div-ficha a#a{
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  top: 80vh;
+  left: 38vw;
+}
+
+.div-ficha a{
+  color: #fff;
+  text-decoration: none;
+}
+/*CABOU A FICHA
+AAAH, ULTIMA COISA*/
+/*.div-ficha input[type=submit]{
+  border: 0.1em solid #fff;
+  color: #fff;
+  background-color: #96041a;
+}*/
+.div-ficha input[type=submit]{
+  background-color: #68000a;
+  color: #fff;
+  font-family: Candara;
+  border-style: none;
+  border-radius: 2vw;
+  width: 12vw;
+  height: 4.2vh;
+}
+.div-ficha table{
+  text-align: left;
+  width: 35vw;
+}
+
+.carac-gerais input{
+  color: #fff;
+}

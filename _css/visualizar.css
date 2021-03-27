@@ -1,0 +1,61 @@
+ body{
+	background-color: #000000;
+	overflow-x: hidden;
+}
+
+input{
+	text-align: center;
+}
+
+.h1{
+	font-family: "Rockwell";
+}
+
+.display-4{
+	font-size: 3em;
+}
+
+.navbar{
+	background-color: #000;
+}
+
+.scrollspySite{
+	position: relative;
+	overflow: auto;
+	overflow-x: hidden;
+	height: 80vh;
+}
+
+.scrollspySite::-webkit-scrollbar-track {
+	overflow-y: hidden;
+  	border-radius: 10px;
+  	background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: lightGray;
+}
+
+@media (max-width: 575.98px) {
+	.display-4 {
+		font-size: 2rem;
+	}
+	.scrollspySite{
+		height: 75vh;
+	}
+}
+
+
+
