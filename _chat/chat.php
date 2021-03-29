@@ -62,7 +62,8 @@ if (isset($_POST["expulsar"])) {
 	background-color:#000;
 }
 	</style>
-<title>Perfil</title>
+<link rel="icon" type="png" href="../_imagensdosite/icon.png">
+<title>Chat</title>
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
