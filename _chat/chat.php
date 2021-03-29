@@ -119,8 +119,14 @@ $(document).ready(function(e){
 
 
 </head>
-<body background="C:\xampp\htdocs\Imagens\Fundo.jpg" bgproperties="fixed">
-
+<!--<body background="C:\xampp\htdocs\Imagens\Fundo.jpg" bgproperties="fixed">-->
+<body>
+	<!-- INÍCIO DO NAVEGADOR. Navbar que fica em cima de todas as páginas para acesso rápido de outras partes do site -->
+	<?php 
+  		require("menusuperior2.php");
+	?>
+	<!--final do navegador-->
+<br> <br> <br>
 <div class="container text-light">
 <center>
 <h2>
@@ -218,7 +224,7 @@ td, th {
 
 				<div class="col-5 col-md-4">
 					
-					<label for="mod"> <h5> Modificador</label> </h5>
+					<label for="mod"> <h5> Modificador</label> </h5><br>
 					<input type="number" class="form-control mb-2" id="mod"  onchange="baseMod()" value="0" name="mod" width="300px" height="300px">
 
 				</div>
@@ -416,33 +422,33 @@ document.getElementById('dados').reset();
 
 </div>
     </td>-->
-  </tr>
-</table>
-</div>
+	</tr>
+	</table>
+	</div>
 
-<div id="conteudo-right">
-<h5>
-<?php 
-if ($_SESSION['id_usuario'] == $_SESSION['id_dono']) {
-	echo "Deseja convidar alguém? (Digite o apelido)<form action='convite.php' method='POST'><input type='text' name='convidado'><input type='submit' value='Convidar'></form>";
-}
+	<div id="conteudo-right">
+	<h5>
+	<?php 
+	if ($_SESSION['id_usuario'] == $_SESSION['id_dono']) {
+		echo "Deseja convidar alguém? (Digite o apelido)<form action='convite.php' method='POST'><input type='text' name='convidado'><input type='submit' value='Convidar'></form>";
+	}
 
-?>
-<form name="form1">
-<b><?php echo "Mesa: ".$_SESSION['mesa']."<br>Dono: ". $_SESSION['nome_dono']; ?></b> <br />
-<br />
-<textarea name="msg"></textarea><br />
-<a href="#" onclick="submitChat()" class="btn  btn-light">Enviar</a><br /><br />
-<a href="index.php" class="btn  btn-light">Voltar</a><br /><br />
-<a href="logout.php" class="btn  btn-light">Logout</a><br /><br />
-</form>
-<form action="index_jogador.php" method="POST"><input type="submit" name="sair_mesa" value="Sair da mesa" class="btn  btn-light"></form><br>
-<div id="chatlogs">
-Carregando Chat...
-</h5>
-</div>
-</div>
-</div>
-</div>
-</body>
+				?>
+						<form name="form1">
+							<b><?php echo "Mesa: ".$_SESSION['mesa']."<br>Dono: ". $_SESSION['nome_dono']; ?></b> <br />
+							<br />
+							<textarea name="msg"></textarea><br />
+							<a href="#" onclick="submitChat()" class="btn  btn-light">Enviar</a><br /><br />
+							<a href="index.php" class="btn  btn-light">Voltar</a><br /><br />
+							<a href="logout.php" class="btn  btn-light">Logout</a><br /><br />
+							</form>
+							<form action="index_jogador.php" method="POST"><input type="submit" name="sair_mesa" value="Sair da mesa" class="btn  btn-light"></form><br>
+							<div id="chatlogs">
+							Carregando Chat...
+						</h5>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
