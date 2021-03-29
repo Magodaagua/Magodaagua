@@ -2,8 +2,9 @@
 
 session_start();
 
-session_destroy($_SESSION['login']);
+//session_destroy($_SESSION['login']);
+session_destroy(); 
 
-header('Location: ./rpgmovel.html');
+header('Location: ./rpgmovel.php');
 
 ?>
