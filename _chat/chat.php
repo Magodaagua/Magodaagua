@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
+<!-- Conexão com o banco de dados -->
+<?php
+
+	error_reporting(0);
+	ini_set("display_errors", 0 );
+	
+	$db = mysqli_connect('localhost', 'root', '', 'bentotec');
+	mysqli_select_db($db, 'bentotec');
+	
+?>
+
+
+
+<!-- Início da sessão e confirmação de que o usuário está logado -->
 <?php
 
 	session_start();
