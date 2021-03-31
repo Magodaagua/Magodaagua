@@ -4,3 +4,25 @@ Como objetivo secundário (em segundo lugar) podemos ter acordos com escolas par
 Como objetivo terciário  (em terceiro lugar) poderemos ter uma loja com itens exclusivos e com assinaturas; 
 (esse seria o meio de renda do site)
 
+
+
+Precisa fazer ainda (requisitos funcionais):
+1° Chat;
+  - Mudar tudo do chat;
+  - Colocar uma mesa de wallpaper com varias opções;
+    -Opções do mestre:
+      -Convidar, escolher mapa, escolher livro;
+    -Opções do jogador:
+      - Escolher ficha, jogar dados;
+  - escolher skins, jogar dados, sair, escrever no chat de texto, falar no chat de voz, esseas são opções que ambos devem ter;
+  
+2° Mudar as imagens de fundo para cores ou imagens próprias;
+
+3° Criar mais fichas diferenciadas;
+
+4° Criar a microtransação do site;
+
+5° Colocar a tradução para varios idiomas;
+
+
+
