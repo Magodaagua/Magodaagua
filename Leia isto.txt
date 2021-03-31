@@ -1,0 +1,6 @@
+Este site tem como objetivo principal (em primeiro lugar) fazer a comunicação entre jogadores de RPG;
+Como objetivo secundário (em segundo lugar) podemos ter acordos com escolas para usos escolares com feedback para sabermos onde precisamos melhorar;
+(esse seria o meio de conseguir informações de erros de forma rápida)
+Como objetivo terciário  (em terceiro lugar) poderemos ter uma loja com itens exclusivos e com assinaturas; 
+(esse seria o meio de renda do site)
+
